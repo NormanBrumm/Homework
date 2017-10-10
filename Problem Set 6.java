@@ -33,8 +33,12 @@ public class UAHashMap {
 	 */
 	
 	public void readFile(String filename) {
-    BufferedReader br = new BufferedReader(new FileReader(args[0]));
-		
+    		BufferedReader br = new BufferedReader(new FileReader(filename));
+		String tbi;
+		while((tbi = br.readline())!=null) {
+			
+			
+		}
 	}
 	
 	public void insert(UAEmployee k) {
