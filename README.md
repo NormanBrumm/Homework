@@ -32,10 +32,12 @@ public class UAHashMap {
 	 */
 	
 	public void readFile(String filename) {
+    BufferedReader br = new BufferedReader(new FileReader(args[0]));
 		
 	}
 	
 	public void insert(UAEmployee k) {
+    int loc = findLoc(k.id);
 		
 	}
 	
@@ -58,10 +60,21 @@ public class UAHashMap {
 	 */
 	
 	public static void main(String[] args) {
-    BufferedReader br = new BufferedReader(new FileReader(args[0]));
-    
-		
+    int collisions;
+	
+    	
 	}
+  
+  public static int findLoc() {
+    if(args[1].equals("linear"))
+      UAHashMapLinearProbing();
+    if(args[1].equals("quadratic"))
+      UAHashMapQuadraticProbing();    
+    if(args[1].equals("double"))  
+      UAHashMapDoubleHashing
+    
+    return null;
+  } 
 	
 	
 	/*
