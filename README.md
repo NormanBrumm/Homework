@@ -12,6 +12,7 @@ public class UAHashMap {
 	
 	protected static final int INITIAL_SIZE = 27;
 	protected UAEmployee[] T;
+	protected int sortType = 0;
 	protected int hashMapSize;
 	protected int collisionCount;
 	
@@ -60,9 +61,8 @@ public class UAHashMap {
 	 */
 	
 	public static void main(String[] args) {
-    int collisions;
-	
-    	
+		readFile(args[0]);
+		return(getCollisionCount());
 	}
   
   public static int findLoc() {
