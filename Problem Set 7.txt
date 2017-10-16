@@ -1,0 +1,5 @@
+max height of a red black tree is 2lg(n+1) so a tree that has 1024 nodes would be 2lg(1024+1) which is 2 * (10.0015) or 20.003 so a max heigth of 20
+
+you would have two red nodes. the 4th one and the 6th one.
+
+if you are not counting nil leaves as leaves then you Can have a valid and balanced tree with 10 black nodes. When you take into account the nil nodes you are unable to make a tree that is full with 10 nodes and so will never be able to satisfy the rule of needing the same number of black nodes to each leaf.
